@@ -2,7 +2,7 @@
 This code is help to placed signature on the PDF file by using USB TOKEN. I have tested this code for ePass2003 token so for other token it maybe not working.
 
 
-# Prequisite
+# Prerequisite 
 1. User have to installed the USB driver in the system. After installed the driver check that a .dll has present in the below directory:- 
     C:\Windows\System32\eps2003csp11v2.dll
     
