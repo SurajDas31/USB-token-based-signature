@@ -1,5 +1,5 @@
 # USB-token-based-signature
-This code is help to placed signature on the PDF file by using USB TOKEN.
+This code is help to placed signature on the PDF file by using USB TOKEN. I have tested this code for ePass2003 token so for other token it maybe not working.
 
 
 # Prequisite
