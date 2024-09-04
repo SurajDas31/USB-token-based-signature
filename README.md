@@ -1,12 +1,14 @@
 # USB-token-based-signature
-This code is help to placed signature on the PDF file by using USB TOKEN. I have tested this code for ePass2003 token so for other token it maybe not working.
+This code is help to placed signature on the PDF file by using USB TOKEN. Applicable only for eMudhra and ProxKey token.
+
 
 
 # Prerequisite 
-1. User have to installed the USB driver in the system. After installed the driver check that a .dll has present in the below directory:- 
-    C:\Windows\System32\eps2003csp11v2.dll
+1. User have to installed the USB driver in the system.
+    PROXKey:- C:\Windows\System32\SignatureP11.dll  
+    ePass 2003:- C:\Windows\System32\eps2003csp11v2.dll or C:\Windows\System32\eps2003csp11.dll
     
-2. User must have installed jdk-8.
+3. User must have installed jdk-8.
 
 
 # Third party library
