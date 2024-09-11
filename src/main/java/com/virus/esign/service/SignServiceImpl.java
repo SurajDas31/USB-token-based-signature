@@ -121,8 +121,9 @@ public class SignServiceImpl implements SignService {
         // Creating the reader and the stamper
         InputStream is = new FileInputStream(src);
         PdfReader reader = new PdfReader(is);
+        
         FileOutputStream os = new FileOutputStream(dest);
-        PdfStamper stamper = PdfStamper.createSignature(reader, os, '\0');
+        PdfStamper stamper = PdfStamper.createSignature(reader, os, '\0',null, true);
 
         // Creating the appearance
         PdfSignatureAppearance appearance = stamper.getSignatureAppearance();
@@ -137,6 +138,10 @@ public class SignServiceImpl implements SignService {
         float height = rectangle.getHeight();
 
         y = height - y;
+
+        log.info("Page width: {}", width);
+        log.info("Page height: {}", height);
+        log.info("x and y coordinate: {} {}", x, y);
 
         // Full pdf size (1018, 1319)
 //        appearance.setVisibleSignature(new Rectangle(350, 200, 500, 300), 1, "sig");

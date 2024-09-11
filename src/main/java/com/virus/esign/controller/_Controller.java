@@ -13,7 +13,6 @@ import java.nio.file.Paths;
 import java.util.Base64;
 
 @Controller
-//@RequestMapping("/")
 public class _Controller {
 
     @GetMapping("/")
@@ -21,10 +20,9 @@ public class _Controller {
     public String index(Model model, @RequestBody(required = false) String body) throws IOException {
 //        JSONObject bodyObject = new JSONObject(body);
 
-        byte[] bytes = Base64.getEncoder().encode(Files.readAllBytes(Paths.get("C:\\Users\\Pericent\\Downloads\\USB Based E-Sign.pdf")));
+        byte[] bytes = Base64.getEncoder().encode(Files.readAllBytes(Paths.get("C:\\Users\\Virus\\Downloads\\c4611_sample_explain.pdf")));
 
         model.addAttribute("file", new String(bytes));
-//        model.addAttribute("pass", pass);
 
         return "index";
     }

@@ -528,13 +528,14 @@ function mouseDoubleClick(ev) {
     document.getElementById("loader").style.display = "";
     getMousePos(ev);
     console.log(ev)
+
+
+    var x = mouseX * 0.6028368794326241
+    var y = mouseY * 0.6028368794326241
+
     console.log(mouseX + " " + mouseY + " " + PDFViewerApplication.page.toString());
 
-    var x = (mouseX * 0.6028368794326241)
-    var y = (mouseY * 0.6028368794326241)
-
     let request = {
-
         pass: "12345678",
         reason: "Testing Reason",
         location: "",

@@ -43,15 +43,10 @@ public class _RestController {
         String pass = bodyObject.getString("pass");
         String reason = bodyObject.getString("reason");
         String location = bodyObject.getString("location");
-        float x = bodyObject.getFloat("y");
+        float x = bodyObject.getFloat("x");
         float y = bodyObject.getFloat("y");
         int pageNumber = bodyObject.getInt("page");
 
-        log.info(pass);
-//        log.info("{} ", fileBytes.getBytes());
-        log.info(reason);
-        log.info(location);
-        log.info("{}", pageNumber);
 
         File file = null;
         File signedFile = null;
